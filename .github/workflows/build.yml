@@ -19,9 +19,9 @@ jobs:
         run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "cmake;3.22.1" || true
 
       - name: Build LibreDWG for Android
-        env:
-          ANDROID_NDK_HOME: ${{ env.ANDROID_NDK_LATEST_HOME }}
-        run: bash scripts/build_libredwg.sh
+        run: |
+          export ANDROID_NDK_HOME="$ANDROID_NDK_LATEST_HOME"
+          bash scripts/build_libredwg.sh
 
       - uses: gradle/actions/setup-gradle@v4
         with:
