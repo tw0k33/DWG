@@ -21,7 +21,7 @@ jobs:
       - name: Build LibreDWG for Android
         env:
           ANDROID_NDK_HOME: ${{ env.ANDROID_NDK_LATEST_HOME }}
-        run: ./scripts/build_libredwg.sh
+        run: bash scripts/build_libredwg.sh
 
       - uses: gradle/actions/setup-gradle@v4
         with:
