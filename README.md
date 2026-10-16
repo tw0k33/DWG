@@ -7,8 +7,3 @@
 Лицензия: LibreDWG распространяется под GPLv3, поэтому приложение
 в целом тоже должно распространяться под GPL с открытым исходным кодом.
 Поддерживаются LINE, CIRCLE, ARC, LWPOLYLINE (расширяется в dwg_jni.cpp).
-
-## Сборка APK через GitHub Actions
-Залейте проект в репозиторий на GitHub. Сборка стартует при каждом push
-(или вручную: вкладка Actions → Build APK → Run workflow).
-Готовый APK: Actions → последний запуск → Artifacts → DwgViewer-debug-apk.
